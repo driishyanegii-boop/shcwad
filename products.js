@@ -1,0 +1,147 @@
+// Product Data
+const products = [
+    {
+        id: 1,
+        name: "Classic Denim Jacket",
+        price: 89.99,
+        image: "https://images.pexels.com/photos/31988321/pexels-photo-31988321.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "A timeless denim jacket crafted from premium quality denim. Perfect for layering and adding a casual edge to any outfit. Features classic button closure, chest pockets, and adjustable waist tabs.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["Blue", "Black", "Light Blue"],
+        rating: 4.5,
+        reviews: 124
+    },
+    {
+        id: 2,
+        name: "Slim Fit Chinos",
+        price: 59.99,
+        image: "https://images.pexels.com/photos/27940204/pexels-photo-27940204.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "Versatile slim-fit chinos made from comfortable stretch cotton. These pants offer a modern silhouette and all-day comfort. Perfect for both casual and semi-formal occasions.",
+        sizes: ["28", "30", "32", "34", "36"],
+        colors: ["Khaki", "Navy", "Gray", "Black"],
+        rating: 4.7,
+        reviews: 89
+    },
+    {
+        id: 3,
+        name: "Premium Oxford Shirt",
+        price: 69.99,
+        image: "https://images.pexels.com/photos/31618286/pexels-photo-31618286.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "Sophisticated oxford shirt in pure cotton fabric. Features a button-down collar, chest pocket, and a tailored fit. Ideal for office wear or smart casual occasions.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["White", "Blue", "Pink", "Gray"],
+        rating: 4.8,
+        reviews: 156
+    },
+    {
+        id: 4,
+        name: "Leather Sneakers",
+        price: 129.99,
+        image: "https://images.pexels.com/photos/13536939/pexels-photo-13536939.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "Premium leather sneakers with a minimalist design. Features cushioned insole, rubber outsole for durability, and breathable leather upper. Perfect for everyday wear.",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+        colors: ["White", "Black", "Navy"],
+        rating: 4.6,
+        reviews: 203
+    },
+    {
+        id: 5,
+        name: "Casual Hoodie",
+        price: 49.99,
+        image: "https://images.pexels.com/photos/2314992/pexels-photo-2314992.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "Comfortable pullover hoodie in soft cotton blend. Features adjustable drawstring hood, kangaroo pocket, and ribbed cuffs. Perfect for casual weekends and athleisure wear.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["Gray", "Black", "Navy", "Burgundy"],
+        rating: 4.4,
+        reviews: 167
+    },
+    {
+        id: 6,
+        name: "Wool Blend Coat",
+        price: 199.99,
+        image: "https://images.pexels.com/photos/36180266/pexels-photo-36180266.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "Elegant wool blend coat for sophisticated style. Features notched lapels, double-breasted closure, and side pockets. Perfect for formal occasions and cold weather.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["Charcoal", "Navy", "Camel"],
+        rating: 4.9,
+        reviews: 78
+    },
+    {
+        id: 7,
+        name: "Performance T-Shirt",
+        price: 29.99,
+        image: "https://images.pexels.com/photos/8979852/pexels-photo-8979852.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "Moisture-wicking performance t-shirt designed for active lifestyles. Features quick-dry fabric, anti-odor technology, and a comfortable athletic fit.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["Black", "White", "Navy", "Red", "Green"],
+        rating: 4.5,
+        reviews: 234
+    },
+    {
+        id: 8,
+        name: "Straight Leg Jeans",
+        price: 79.99,
+        image: "https://images.pexels.com/photos/30710032/pexels-photo-30710032.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "Classic straight leg jeans in premium denim. Features a comfortable fit, five-pocket styling, and durable construction. A wardrobe essential for every man.",
+        sizes: ["28", "30", "32", "34", "36"],
+        colors: ["Dark Blue", "Light Blue", "Black"],
+        rating: 4.6,
+        reviews: 312
+    },
+    {
+        id: 9,
+        name: "Bomber Jacket",
+        price: 149.99,
+        image: "https://images.pexels.com/photos/19824500/pexels-photo-19824500.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "Modern bomber jacket with a sleek silhouette. Features zippered closure, side pockets, and ribbed cuffs and hem. Perfect for transitional weather and street style.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["Black", "Olive", "Navy"],
+        rating: 4.7,
+        reviews: 145
+    },
+    {
+        id: 10,
+        name: "Polo Shirt",
+        price: 44.99,
+        image: "https://images.pexels.com/photos/8068701/pexels-photo-8068701.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "Classic polo shirt in breathable pique cotton. Features a three-button placket, ribbed collar and cuffs, and a regular fit. Perfect for smart casual occasions.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["White", "Navy", "Black", "Red", "Green"],
+        rating: 4.5,
+        reviews: 189
+    },
+    {
+        id: 11,
+        name: "Athletic Shorts",
+        price: 34.99,
+        image: "https://images.pexels.com/photos/29783074/pexels-photo-29783074.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "Lightweight athletic shorts designed for maximum performance. Features moisture-wicking fabric, elastic waistband with drawstring, and zippered pockets.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["Black", "Navy", "Gray", "Blue"],
+        rating: 4.4,
+        reviews: 156
+    },
+    {
+        id: 12,
+        name: "Formal Blazer",
+        price: 189.99,
+        image: "https://images.pexels.com/photos/22276713/pexels-photo-22276713.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        category: "men",
+        description: "Tailored formal blazer crafted from premium fabric. Features notched lapels, two-button closure, and functional pockets. Perfect for business and formal events.",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+        colors: ["Navy", "Charcoal", "Black"],
+        rating: 4.8,
+        reviews: 94
+    }
+];

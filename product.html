@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Shcwad</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NTV0NLN2X5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NTV0NLN2X5');
+</script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">Shc<span>wad</span></a>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="men.html">Men</a>
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-actions">
+                    <a href="cart.html" class="cart-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="men.html">Men</a>
+            <span>/</span>
+            <span id="breadcrumbProduct">Product</span>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-detail" id="productDetail">
+                <!-- Product details will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="products-section" id="relatedSection" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h2>You May Also Like</h2>
+            </div>
+            <div class="products-grid" id="relatedProducts"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">Shc<span>wad</span></h3>
+                    <p>Your premium destination for quality men's fashion. Style meets comfort.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="men.html">Men's Collection</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Email: support@Shcwad.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Hours: Mon-Fri 9AM-6PM EST</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shcwad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
